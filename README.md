@@ -8,5 +8,5 @@ Open Source codebase of SIGMOID, the Scalable Infrastructure for Generic Model O
 A key distinction between `sigmoid` and already existing solutions is that `sigmoid` relies on data-driven scalability by exploiting the underlying grouping of data, that is, partitions of the dataset where every data-point is similar to one another. `sigmoid` then learns how to route data accordingly to train multiple instances of the original model partition-wise, that is, no model instance gets to "see" the entire dataset.
 
 <p align="center">
-  <img src="https://github.com/mindsdb/open-sigmoid/blob/master/assets/figures/sigmoid_flow_diagram.png?raw=true" alt="High level flow-diagram of sigmoid"/>
+  <img src="https://github.com/mindsdb/open-sigmoid/blob/staging/assets/figures/sigmoid_flow_diagram.png?raw=true alt="High level flow-diagram of sigmoid"/>
 </p>
