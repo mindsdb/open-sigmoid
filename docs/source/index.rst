@@ -41,6 +41,7 @@ You can install Sigmoid as follows:
 However, we recommend creating a python virtual environment
 
 .. code-block:: bash
+
    mkdir sigmoid-env
    python -m venv ./sigmoid-env/
    source sigmoid-env/bin/activate
@@ -145,7 +146,6 @@ Current contributors
 
 License
 =======================
-.. raw:: html
 
 | `Sigmoid License <https://github.com/mindsdb/sigmoid/blob/master/LICENSE>`_
 
@@ -153,3 +153,10 @@ Other Links
 =======================
 .. toctree::
    :maxdepth: 8
+
+   tutorials
+   sigmoid_philosophy
+   data_brokers
+   preprocessing
+   auto_encoding
+   api

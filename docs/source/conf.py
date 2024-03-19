@@ -45,8 +45,8 @@ master_doc = "index"
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.inheritance_diagram',
-    'autoapi.sphinx',
-    # 'autoapi.extension',
+    # 'autoapi.sphinx',
+    'autoapi.extension',
     'sphinx.ext.autosectionlabel',
     'sphinx_autodoc_typehints',
     'myst_parser',
@@ -139,10 +139,9 @@ html_sidebars = {
 # ----------------- #
 # Autodoc capability
 # ----------------- #
+autoapi_dirs = ['../../sigmoid']
+autoapi_type = "python"
 autoapi_template_dir = '_autoapi_templates'
 autoapi_root = 'docs'
-autoapi_generate_api_docs = False
-
-autoapi_dirs = ['../../sigmoid']
-
-# autodoc_member_order = 'bysource' # Keep order of the members accordingly
+autoapi_generate_api_docs = True
+autodoc_member_order = 'bysource'  # Keep order of the members accordingly

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "open-sigmoid"
+name = "sigmoid"
 version = "0.1.0"
 description = "Open source Scalable Infrascture for General Model Optimization on Inhomogenuous Datasets."
 authors = ["MindsDB Inc. <community@mindsdb.com>"]
@@ -8,7 +8,7 @@ homepage = "https://github.com/mindsdb/open-sigmoid"
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.9,<3.12"
 iterative_stratification = "^0.1"
 matplotlib = "^3.8"
 mysql-connector = "^2.2"
@@ -24,9 +24,15 @@ prefect = "^2.12.0"
 greenery = "^3.2"
 ptype = "^0.2"
 
-[tool.poetry.docs-dependencies]
-pytest = "^5.2"
-sphinx = "^3.0.4"
+[tool.poetry.group.dev.dependencies]
+autoapi = "^2"
+pytest = ">5"
+sphinx = "^4"
+sphinx_autodoc_typehints = "^2"
+sphinx_autoapi = "^3"
+sphinx_rtd_theme = "^2"
+nbsphinx = "^0.9"
+myst_parser = "^2"
 recommonmark = "^0.6.0"
 flake8 = "^3.8.2"
 pytest-mypy = "^0.6.2"
