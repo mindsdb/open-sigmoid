@@ -1,7 +1,7 @@
-:mod:`preprocessing`
+:mod:`auto_encoding`
 ================================
 
-.. automodule:: preprocessing
+.. automodule:: auto_encoding
    :members:
    :show-inheritance:
    :member-order: bysource

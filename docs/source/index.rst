@@ -15,15 +15,13 @@ SIGMOID is an AutoML framework that enables you to generate, train and deploy sc
 Our goal is
 
 Sigmoid works with a variety of data types such as numbers, dates, categories, tags, text, arrays and various multimedia formats.
-These data types can be combined together to solve complex problems. We also support a time-series mode for problems that
-have between-row dependencies.
+These data types can be combined together to solve complex problems.
 
 For details as to how sigmoid works, check out the "Sigmoid Philosophy" page.
 
 Quick Guide
 =======================
 - :ref:`Installation <Installation>`
-- :ref:`Example Use Cases <Example Use Cases>`
 - :ref:`Contribute to Sigmoid <Contribute to Sigmoid>`
 
 Installation
@@ -55,10 +53,6 @@ Setting up a dev environment
 
 .. warning:: If ``python`` default to python2.x on your environment use ``python3`` and ``pip3`` instead
 
-Currently, the preferred environment for working with sigmoid is Visual Studio Code, a popular Python IDE.
-However, any IDE should work. While we don't have guides for those, please feel free to use the following section as a
-template for VSCode, or to contribute your own tips and tricks to set up other IDEs.
-
 Setting up a VSCode environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -71,22 +65,10 @@ Setting up a VSCode environment
 * Install live share and live share whiteboard
 
 
-Example Use Cases
-=======================
-
-Sigmoid works with ``pandas.DataFrame``. The only thing a user needs to specify is the name of the column to predict (via the key ``target``).
-
-And end-to-end example is given in the tutorials, to predict home rental prices.
-
-.. code-block:: python
-
-   import pandas as pd
-   # rest of the quick start coming soon...
-
 Contribute to Sigmoid
 =======================
 
-We love to receive contributions from the community and hear your opinions! We want to make contributing to Sigmoid as easy as it can be.
+We love to receive contributions from the community and hear your opinions! We want to make contributing to `sigmoid` as easy as it can be.
 
 Being part of the core Sigmoid team is possible to anyone who is motivated and wants to be part of that journey!
 
@@ -111,14 +93,14 @@ In general, we follow the `fork-and-pull <https://docs.github.com/en/github/coll
 3. Make changes and commit them
 4. Make sure that the CI tests pass. You can run the test suite locally with ``flake8 .`` to check style and ``python -m unittest discover tests`` to run the automated tests. This doesn't guarantee it will pass remotely since we run on multiple envs, but should work in most cases.
 5. Push your local branch to your fork
-6. Submit a pull request from your repo to the ``staging`` branch of ``mindsdb/sigmoid`` so that we can review your changes. Be sure to merge the latest from staging before making a pull request!
+6. Submit a pull request from your repo to the ``staging`` branch of ``mindsdb/open-sigmoid`` so that we can review your changes. Be sure to merge the latest from staging before making a pull request!
 
 .. note:: You will need to sign a CLI agreement for the code since sigmoid is under a GPL license!
 
 
 Feature and Bug reports
 ^^^^^^^^^^^^^^^^^^^^^^^^
-We use GitHub issues to track bugs and features. Report them by opening a `new issue <https://github.com/mindsdb/sigmoid/issues/new/choose>`_ and fill out all of the required inputs.
+We use GitHub issues to track bugs and features. Report them by opening a `new issue <https://github.com/mindsdb/open-sigmoid/issues/new/choose>`_ and fill out all of the required inputs.
 
 
 Code review process
@@ -155,7 +137,7 @@ Current contributors
 .. raw:: html
 
     <embed>
-    <a href="https://github.com/mindsdb/sigmoid/graphs/contributors">
+    <a href="https://github.com/mindsdb/open-sigmoid/graphs/contributors">
       <img src="https://contributors-img.web.app/image?repo=mindsdb/sigmoid" />
     </a>
     </embed>
@@ -165,18 +147,9 @@ License
 =======================
 .. raw:: html
 
-    <embed>
-    <img src="https://img.shields.io/pypi/l/sigmoid" alt="PyPI - License">
-    </embed>
-
 | `Sigmoid License <https://github.com/mindsdb/sigmoid/blob/master/LICENSE>`_
 
 Other Links
 =======================
 .. toctree::
    :maxdepth: 8
-
-   tutorials
-   api
-   essenzziehen
-   sigmoid_philosophy

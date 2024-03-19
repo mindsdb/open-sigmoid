@@ -1,8 +1,7 @@
-:mod:`Makler`
+:mod:`data_brokers`
 ================================
-Makler can be translated as "broker"
 
-.. automodule:: makler
+.. automodule:: data_brokers
    :members:
    :show-inheritance:
    :member-order: bysource
