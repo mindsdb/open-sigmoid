@@ -13,22 +13,22 @@ import torch
 from torchmetrics.regression import MeanSquaredError
 
 # data files
-from sigmoid.preprocessing.local.coordinate_files import LocalCache
-from sigmoid.preprocessing.local.coordinate_files import LocalDataset
-from sigmoid.preprocessing.local.coordinate_files import LocalLoader
+from sigmoid.preprocessing.coordinate_files import LocalCache
+from sigmoid.preprocessing.coordinate_files import LocalDataset
+from sigmoid.preprocessing.coordinate_files import LocalLoader
 # column transforms
-from sigmoid.preprocessing.local.transformations import CategoricalAsOneHot
-from sigmoid.preprocessing.local.transformations import NumericalNormalize
-from sigmoid.preprocessing.local.transformations import BinaryAsZeroOne
+from sigmoid.preprocessing.transformations import CategoricalAsOneHot
+from sigmoid.preprocessing.transformations import NumericalNormalize
+from sigmoid.preprocessing.transformations import BinaryAsZeroOne
 # first-pass dimensionality reduction (for estimation purposes)
-from sigmoid.analysis.local.dimensionality_reduction import LocalPCAEstimator
+from sigmoid.analysis.dimensionality_reduction import LocalPCAEstimator
 # soul capturing
-from sigmoid.auto_encoding.local.autoencoders import MixedTypesAutoEncoder
+from sigmoid.auto_encoding.autoencoders import MixedTypesAutoEncoder
 # clustering to find optimal number of experts
-from sigmoid.switching.local.clustering import OptimalClustering
+from sigmoid.analysis.clustering import OptimalClustering
 # switch-MoE
-from sigmoid.switching.local.switches import Convolutional1DSwitch
-from sigmoid.model_scalers.local.pools import StochasticPool
+from sigmoid.switching.models import Convolutional1DSwitch
+from sigmoid.model_scaling.pools import StochasticPool
 from sigmoid.nn.convolutional import EfficientBackbone1D
 
 
