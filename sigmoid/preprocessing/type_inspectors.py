@@ -15,7 +15,6 @@
 """
 import pandas
 
-from ptype.PtypeCat import PtypeCat
 from type_infer.infer import infer_types
 
 
@@ -80,35 +79,6 @@ class Inspector:
         """ Performs type inference on loaded data.
         """
         raise NotImplementedError("Cannot call from base class.")
-
-
-class PtypeInspector(Inspector):
-    """ Performs probabilistic type inference using PType
-
-        https://link.springer.com/article/10.1007/s10618-020-00680-1
-    """
-    def __init__(self, data_path: str, **kwargs):
-        """ Initializer.
-
-            :param data_path (str)
-                system path to CSV file.
-            :param kwargs (keyword arguments)
-                keyword arguments passed to `pandas.read_csv()`.
-        """
-        super(PtypeInspector, self).__init__(data_path, **kwargs)
-
-        self.type_inference_engine_ = PtypeCat()
-
-    def infer_data_types(self, **kwargs):
-        """ Performs type inference on loaded data.
-        """
-        schema = self.type_inference_engine_.schema_fit(self.raw_df_)
-        # convert schema into common data structure
-        for column in schema.cols:
-            info = {}
-            info['type'] = schema.cols[column].type
-            info['probability'] = schema.cols[column].p_t.get(info['type'])
-            self.column_info_[column] = info
 
 
 class TypeInferInspector(Inspector):
